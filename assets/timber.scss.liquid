@@ -1139,6 +1139,21 @@ html input[disabled] {
   }
 }
 
+.simple-btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    outline: 0;
+    padding: 0;
+    font-family: "futura-pt",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: currentColor;
+}
+
 .btn--secondary,
 input.btn--secondary {
   @extend .btn;
@@ -2182,12 +2197,17 @@ $socialIconFontStack: "icons";
 }
 
 /*================ Module | Site Header ================*/
+#shopify-section-header {
+    position: fixed;
+    width: 100%;
+    z-index: 222;
+}
 .site-header {
-  padding: 40px 0;
-  background-color: $colorHeader;
+  padding: 0px;
+  background-color: white;
 
   @include at-query ($min, $large) {
-    padding: $gutter 0;
+    padding: 0px;
 
     .post-large--display-table {
       min-height: 86px;

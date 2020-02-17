@@ -1616,6 +1616,10 @@ $badgeSize: 60px;
   }
 }
 
+.page-width .feature-row {
+  background-color: #edeff4;
+}
+
 .feature-row__item {
   @include flex(0 1 50%);
 
@@ -1651,8 +1655,8 @@ $badgeSize: 60px;
 }
 
 .feature-row__text {
-  padding-top: $section-spacing-small;
-  padding-bottom: $section-spacing-small;
+  padding: 75px 35px;
+  text-align: center;
 
   @include at-query ($max, $medium) {
     order: 2;
@@ -1673,6 +1677,8 @@ $badgeSize: 60px;
 @include at-query ($min, $large) {
   .featured-row__subtext {
     font-size: em($baseFontSize + 2);
+    padding-top:22px;
+    padding-bottom:22px;
   }
 }
 
